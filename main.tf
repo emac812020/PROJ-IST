@@ -44,12 +44,14 @@ resource "intersight_adapter_config_policy" "sds-adapter-config-policy" {
       lldp_enabled = true
     }
     fc_settings {
-      fip_enabled = true
+      fip_enabled = false
     }
   }
 
 }
 
+#------------- ADDING -----   
+  
 # resource "intersight_vnic_eth_qos_policy" "sds-ethernet-qos-policy" {
 #   name           = "sds-ethernet-qos-policy"
 #   description    = "Ethernet quality of service for SDS"

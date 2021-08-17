@@ -41,7 +41,7 @@ resource "intersight_adapter_config_policy" "sds-adapter-config-policy" {
   settings {
     slot_id = "MLOM"
     eth_settings {
-      lldp_enabled = true
+      lldp_enabled = false
     }
     fc_settings {
       fip_enabled = false

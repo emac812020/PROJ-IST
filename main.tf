@@ -56,7 +56,7 @@ resource "intersight_adapter_config_policy" "sds-adapter-config-policy" {
  resource "intersight_vnic_eth_qos_policy" "sds-ethernet-qos-policy" {
    name           = "sds-ethernet-qos-policy"
    description    = "Ethernet quality of service for SDS"
-   mtu            = 9500
+   mtu            = 9000
    rate_limit     = 0
    cos            = 0
    trust_host_cos = false

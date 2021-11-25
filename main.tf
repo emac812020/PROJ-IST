@@ -30,7 +30,8 @@ module "intersight-moids" {
   organization_name = var.organization_name
 }
 
-
+# ---- Configure --> Policies --> sds-adapter-config-policy
+  
 resource "intersight_adapter_config_policy" "sds-adapter-config-policy" {
   name        = "sds-adapter-config-policy"
   description = "Adapter Configuration Policy for SDS"

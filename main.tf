@@ -45,7 +45,7 @@ resource "intersight_adapter_config_policy" "sds-adapter-config-policy" {
       lldp_enabled = true
     }
     fc_settings {
-      fip_enabled = false
+      fip_enabled = true
     }
   }
 
